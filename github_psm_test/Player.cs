@@ -28,6 +28,12 @@ namespace github_psm_test{
 		public void SetMana(byte mana){
 			mana = this.mana;
 		}
+		public byte GetHealth (){
+			return health;
+		}
+		public byte GetMana (){
+			return mana;
+		}
 	}
 }
 
