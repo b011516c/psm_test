@@ -2,8 +2,8 @@ using System;
 
 namespace github_psm_test{
 	public class Player{
-		private float x;
-		private float y;
+		private float x = 0.0f;
+		private float y = 0.0f;
 		private byte health = 50;
 		private byte mana = 50;
 		public Player (float x, float y, byte health, byte mana){
@@ -21,6 +21,7 @@ namespace github_psm_test{
 			} else if (xy == "Y" || xy == "y"){
 				return y;
 			}
+			return 0.0f;
 		}
 		public void SetHealth(byte health){
 			health = this.health;
